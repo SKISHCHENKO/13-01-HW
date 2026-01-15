@@ -125,7 +125,7 @@ SQL-инъекция в модуле mod_sql при обработке имен�
 атакующая ВМ Linix kali 192.168.56.101  
 уязвимая  ВМ Linux Metasploitable2 192.168.56.106  
 
-1️⃣ SYN-сканирование  
+###1️⃣ SYN-сканирование  
 nmap -sS 192.168.56.106  
 
 ┌──(kali㉿kali)-[~]  
@@ -162,7 +162,7 @@ MAC Address: 08:00:27:04:E7:92 (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
 
 Nmap done: 1 IP address (1 host up) scanned in 0.33 seconds  
 
-2️⃣ FIN-сканирование  
+###2️⃣ FIN-сканирование  
 nmap -sF 192.168.56.106  
  
 ──(kali㉿kali)-[~]  
@@ -199,7 +199,7 @@ MAC Address: 08:00:27:04:E7:92 (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
 
 Nmap done: 1 IP address (1 host up) scanned in 1.43 seconds  
 
-3️⃣ Xmas-сканирование  
+###3️⃣ Xmas-сканирование  
 nmap -sX 192.168.56.106  
 
 ──(kali㉿kali)-[~]  
@@ -236,7 +236,7 @@ MAC Address: 08:00:27:04:E7:92 (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
 
 Nmap done: 1 IP address (1 host up) scanned in 1.50 seconds  
 
-4️⃣ UDP-сканирование  
+###4️⃣ UDP-сканирование  
 
 ──(kali㉿kali)-[~]  
 └─$ nmap -sU 192.168.56.106  
@@ -263,7 +263,7 @@ Xmas scan: TCP-пакеты с флагами FIN+PSH+URG (0x29) — 1023 зап
 UDP scan: UDP-датаграммы — 1750 запросов  
 
  Чем отличаются режимы сканирования с точки зрения сетевого трафика  
-1.SYN scan (nmap -sS)  
+###1.SYN scan (nmap -sS)  
 
 Что отправляет Kali: TCP SYN (флаг 0x02) на разные порты цели.  
 Kali → Metasploitable: SYN  
@@ -276,7 +276,7 @@ Metasploitable → Kali:
 977 ответов RST,ACK (0x14) → закрытые порты  
 
 
-2.FIN scan (nmap -sF)  
+###2.FIN scan (nmap -sF)  
 
 Что отправляет Kali: TCP пакет с FIN (0x01) без установленного соединения.  
 
@@ -287,7 +287,7 @@ Kali → Metasploitable: много FIN (0x01)
 Metasploitable → Kali: 977 раз RST,ACK (0x14)  
 
 
-3.Xmas scan (nmap -sX)  
+###3.Xmas scan (nmap -sX)  
 
 Что отправляет Kali: TCP пакет с “ёлочными” флагами FIN+PSH+URG (0x29).  
 
@@ -297,7 +297,7 @@ Metasploitable → Kali: 977 раз RST,ACK (0x14)
 Kali → Metasploitable: флаги 0x29  
 Metasploitable → Kali: 977 ответов RST,ACK (0x14)  
 
-4.UDP scan (nmap -sU)  
+###4.UDP scan (nmap -sU)  
 
 Что отправляет Kali: UDP датаграммы на разные порты.  
 UDP не имеет “рукопожатия” и подтверждений как TCP.  
