@@ -44,7 +44,7 @@
 ## Решение 1
 
 Вывод:  
-![Задание 1](https://github.com/SKISHCHENKO/13-02-HW/blob/main/img/task1_1.png)
+![Задание 1](https://github.com/SKISHCHENKO/13-01-HW/blob/main/img/task1_1.png)
 
 ![Задание 1](https://github.com/SKISHCHENKO/13-01-HW/blob/main/img/task1_2.png)
 
@@ -255,7 +255,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1018.50 seconds
                                                                                     
 Файл wireshark со сканирования:  
 
-![Задание 1](https://github.com/SKISHCHENKO/13-01-HW/blob/main/files/wireshark.pcapng)
+[Задание 2 — дамп Wireshark](https://raw.githubusercontent.com/SKISHCHENKO/13-01-HW/main/files/wireshark.pcapng)
 
 SYN scan: TCP-пакеты с флагом SYN (0x02) — 1000 запросов  
 FIN scan: TCP-пакеты с флагом FIN (0x01) — 1023 запроса  
